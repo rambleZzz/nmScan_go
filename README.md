@@ -13,7 +13,7 @@
 |_| |_|_|_|_(______/ \____)_____|_| |_|  Ver:1.1
 
 https://github.com/rambleZzz/nmScan_go
-nmScan: v1.1	Dev:go1.7
+nmScan: v1.1	Dev:go1.17
 
 
 NAME:
