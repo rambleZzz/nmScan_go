@@ -1,0 +1,2 @@
+# nmScan_go
+一款基于GO语言编写的支持调用fofa搜索结果、masscan json格式扫描结果、直接调用ip和ip:port格式4种方式进行nmap快速扫描，多种格式输出的主机端口信息的收集工具
