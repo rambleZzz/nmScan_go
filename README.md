@@ -49,7 +49,7 @@ GLOBAL OPTIONS:
    --version, -v              print the version (default: false)
 
 ```  
-首次执行会自动生成config.yaml配置文件，如果需要fofa搜索扫描模式请先填写fofa认证配置信息
+首次执行会在当前目录自动生成config.yaml配置文件，如果需要fofa搜索扫描模式请先填写fofa认证配置信息
 
 ```
 #nmScan Yaml config
