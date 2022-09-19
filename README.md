@@ -38,7 +38,7 @@ USAGE:
    f和m参数为必填项，其他参数为可选项，更多参数请参考GLOBAL OPTIONS
 
 VERSION:
-   v1.0
+   v1.1
 
 COMMANDS:
    help, h  Shows a list of commands or help for one command
