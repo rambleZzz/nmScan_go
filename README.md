@@ -115,7 +115,7 @@ scan:
 221.x.x.x
 ````
 #### 运行截图
-![image-1.png](https://github.com/rambleZzz/nmScan_go/tree/main/README/image-1.png)  
+![image-1.png](https://github.com/rambleZzz/nmScan_go/blob/main/README/image-1.png)  
 ![image-2.png](https://github.com/rambleZzz/nmScan_go/tree/main/README/image-2.png)   
 ![image-3.png](https://github.com/rambleZzz/nmScan_go/tree/main/README/image-3.png)  
 ![image-4.png](https://github.com/rambleZzz/nmScan_go/tree/main/README/image-4.png)  
