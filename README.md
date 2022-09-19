@@ -116,21 +116,22 @@ scan:
 ````
 #### 运行截图
 ![image-1.png](https://github.com/rambleZzz/nmScan_go/blob/main/README/image-1.png)  
-![image-2.png](https://github.com/rambleZzz/nmScan_go/tree/main/README/image-2.png)   
-![image-3.png](https://github.com/rambleZzz/nmScan_go/tree/main/README/image-3.png)  
-![image-4.png](https://github.com/rambleZzz/nmScan_go/tree/main/README/image-4.png)  
-![image-5.png](https://github.com/rambleZzz/nmScan_go/tree/main/README/image-5.png)  
-![image-6.png](https://github.com/rambleZzz/nmScan_go/tree/main/README/image-6.png)  
+![image-2.png](https://github.com/rambleZzz/nmScan_go/blob/main/README/image-2.png)   
+![image-3.png](https://github.com/rambleZzz/nmScan_go/blob/main/README/image-3.png)  
+![image-4.png](https://github.com/rambleZzz/nmScan_go/blob/main/README/image-4.png)  
+![image-5.png](https://github.com/rambleZzz/nmScan_go/blob/main/README/image-5.png)  
+![image-6.png](https://github.com/rambleZzz/nmScan_go/blob/main/README/image-6.png)  
 ### 结果输出
 #### 1、txt结果输出
 -oT表示输出到txt，此参数默认为false,如果需要导出到文本需添加此参数
 #### 2、sqlite结果输出
  -oS表示输出到sqlite，此参数默认为true,不加也会输出,如果-oS false表示不输出至sqlite
 #### 结果截图
-![image-7.png](https://github.com/rambleZzz/nmScan_go/tree/main/README/image-7.png)   
-![image-8.png](https://github.com/rambleZzz/nmScan_go/tree/main/README/image-8.png) 
+![image-7.png](https://github.com/rambleZzz/nmScan_go/blob/main/README/image-7.png)   
+![image-8.png](https://github.com/rambleZzz/nmScan_go/blob/main/README/image-8.png) 
 
 
 ### 参考链接 
+github.com/Ullaakut/nmap/v2
 https://github.com/shadow1ng/fscan  
 https://github.com/wgpsec/ENScan_GO
