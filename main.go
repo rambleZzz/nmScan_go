@@ -20,7 +20,7 @@ func main() {
 
 	var app = &cli.App{
 		Name:    "nmScan_go",
-		Version: "v1.0",
+		Version: "v1.1",
 		Usage:   "一款基于GO语言编写的支持调用fofa搜索结果、masscan json格式扫描结果、\n直接调用ip和ip:port格式4种方式进行nmap快速扫描，多种格式输出的主机端口信息的收集工具",
 		UsageText: "nmScan -f ip.txt -m ip	(ip格式扫描模式，使用内置的常见端口扫描，并输出结果至sqlite)\n" +
 			"nmScan -f ip.txt -m ip -p 22,445,3306,6379,8001-8005	(ip格式扫描模式，并指定端口扫描，并输出结果至sqlite)\n" +
