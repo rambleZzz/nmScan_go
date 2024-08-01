@@ -55,7 +55,7 @@ func main() {
 			&cli.IntFlag{
 				Name:        "threads",
 				Aliases:     []string{"t"},
-				Value:       100,
+				Value:       5,
 				Usage:       "扫描线程数 ",
 				Destination: &threads,
 			},
