@@ -150,7 +150,7 @@ func ParseNmscanResult(result *nmap.Run) (HostInfo, []PortInfo) {
 		log.Printf("[%s][nmap扫描结果]:\n", ip)
 		for _, port := range host.Ports {
 			if port.State.State == "open" {
-				fmt.Printf("	Port %v/%v %v %v %v %v\n", port.ID, port.Protocol, port.State, port.Service.Name, port.Service.Product, port.Service.Version)
+				log.Printf("	Port %v/%v %v %v %v %v\n", port.ID, port.Protocol, port.State, port.Service.Name, port.Service.Product, port.Service.Version)
 				portID := strconv.Itoa(int(port.ID))
 				portInfo.Ip = ip
 				portInfo.Port = portID
@@ -171,16 +171,16 @@ func ParseNmscanResult(result *nmap.Run) (HostInfo, []PortInfo) {
 			if port_open_num > 0 {
 				hostInfo.Ip = host.Addresses[0].Addr
 				hostInfo.Ports = strings.Join(h_ports, ",")
-				fmt.Printf("	[%s 开放端口统计]: %v\n", ip, hostInfo.Ports)
+				log.Printf("	[%s 开放端口统计]: %v\n", ip, hostInfo.Ports)
 			} else {
-				fmt.Printf("	[%s 开放端口统计]: 无端口开放\n", ip)
+				log.Printf("	[%s 开放端口统计]: 无端口开放\n", ip)
 			}
 		} else {
-			fmt.Printf("	[%s 开放端口统计]: 可能防火墙过滤原因导致开放端口超过%d个,不对此IP结果进行导出\n", ip, PortOpenCountLimit)
+			log.Printf("	[%s 开放端口统计]: 可能防火墙过滤原因导致开放端口超过%d个,不对此IP结果进行导出\n", ip, PortOpenCountLimit)
 		}
 
 	}
-	fmt.Printf("	[%s 端口扫描用时]: %.2f 秒\n", ip, result.Stats.Finished.Elapsed)
+	log.Printf("	[%s 端口扫描用时]: %.2f 秒\n", ip, result.Stats.Finished.Elapsed)
 	if port_open_num > 0 && port_open_num < PortOpenCountLimit && OutSqlFlag == true {
 		Out2sqlite(hostInfo, pInfo)
 	}
